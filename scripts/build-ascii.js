@@ -10,9 +10,9 @@ const SRC = path.join(ROOT, "assets", "img", "ascii-art.txt");
 const OUT = path.join(ROOT, "assets", "img", "ascii-avatar.svg");
 
 const FIRST_ROW = 4; // corta o topo vazio
-const LAST_ROW = 30; // corta o excesso de torso
-const COL_START = 12; // tira a margem vazia da esquerda
-const COL_END = 66; // fim da arte
+const LAST_ROW = 43; // arte completa
+const COL_START = 0; // arte completa
+const COL_END = 72; // fim da arte
 const FONT = 12;
 const CHAR_W = FONT * 0.6;
 const LINE_H = 14.6;

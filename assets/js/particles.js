@@ -1,4 +1,4 @@
-/* Fundo animado: partículas lilás que se movem devagar e se conectam.
+/* Fundo interativo: partículas lilás que se movem, se conectam e reagem ao mouse.
    Canvas puro, sem dependências. Pausa com a aba em segundo plano. */
 
 (() => {
@@ -8,8 +8,9 @@
   if (!canvas) return;
 
   const ctx = canvas.getContext("2d");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const LINK = 140;
+  const LINK = 150;
+  const CURSOR_LINK = 170;
+  const CURSOR_PUSH = 120;
 
   let width = 0;
   let height = 0;
@@ -17,16 +18,19 @@
   let raf = null;
   let resizeTimer = null;
 
+  const pointer = { x: -9999, y: -9999, active: false };
+
   function build() {
-    const total = Math.min(90, Math.max(24, Math.round((width * height) / 26000)));
+    const total = Math.min(110, Math.max(34, Math.round((width * height) / 20000)));
 
     dots = Array.from({ length: total }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.2,
-      vy: (Math.random() - 0.5) * 0.2,
-      r: 1 + Math.random() * 1.7,
-      a: 0.2 + Math.random() * 0.32,
+      vx: (Math.random() - 0.5) * 0.34,
+      vy: (Math.random() - 0.5) * 0.34,
+      r: 1.2 + Math.random() * 1.9,
+      a: 0.22 + Math.random() * 0.36,
+      hue: Math.random() < 0.28 ? 268 : 259,
     }));
   }
 
@@ -50,6 +54,7 @@
 
     for (let i = 0; i < dots.length; i++) {
       const a = dots[i];
+
       for (let j = i + 1; j < dots.length; j++) {
         const b = dots[j];
         const dx = a.x - b.x;
@@ -58,19 +63,38 @@
         if (dist2 > LINK * LINK) continue;
 
         const dist = Math.sqrt(dist2);
-        ctx.strokeStyle = `rgba(139, 92, 246, ${((1 - dist / LINK) * 0.15).toFixed(3)})`;
+        ctx.strokeStyle = `rgba(139, 92, 246, ${((1 - dist / LINK) * 0.16).toFixed(3)})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
         ctx.stroke();
       }
+
+      if (pointer.active) {
+        const dx = a.x - pointer.x;
+        const dy = a.y - pointer.y;
+        const dist2 = dx * dx + dy * dy;
+        if (dist2 < CURSOR_LINK * CURSOR_LINK) {
+          const dist = Math.sqrt(dist2);
+          ctx.strokeStyle = `rgba(124, 58, 237, ${((1 - dist / CURSOR_LINK) * 0.4).toFixed(3)})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(pointer.x, pointer.y);
+          ctx.stroke();
+        }
+      }
     }
 
     dots.forEach((dot) => {
+      const glow = pointer.active
+        ? Math.max(0, 1 - Math.hypot(dot.x - pointer.x, dot.y - pointer.y) / 220)
+        : 0;
+
       ctx.beginPath();
-      ctx.fillStyle = `rgba(124, 58, 237, ${dot.a.toFixed(3)})`;
-      ctx.arc(dot.x, dot.y, dot.r, 0, Math.PI * 2);
+      ctx.fillStyle = `hsla(${dot.hue}, 82%, ${52 - glow * 8}%, ${(dot.a + glow * 0.3).toFixed(3)})`;
+      ctx.arc(dot.x, dot.y, dot.r + glow * 1.6, 0, Math.PI * 2);
       ctx.fill();
     });
   }
@@ -79,6 +103,18 @@
     for (const dot of dots) {
       dot.x += dot.vx;
       dot.y += dot.vy;
+
+      if (pointer.active) {
+        const dx = dot.x - pointer.x;
+        const dy = dot.y - pointer.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist < CURSOR_PUSH && dist > 0.001) {
+          const force = ((1 - dist / CURSOR_PUSH) * 1.4) / dist;
+          dot.x += dx * force;
+          dot.y += dy * force;
+        }
+      }
+
       if (dot.x < -30) dot.x = width + 30;
       if (dot.x > width + 30) dot.x = -30;
       if (dot.y < -30) dot.y = height + 30;
@@ -90,7 +126,7 @@
   }
 
   function start() {
-    if (raf || reduceMotion) return;
+    if (raf) return;
     raf = requestAnimationFrame(step);
   }
 
@@ -99,6 +135,24 @@
     cancelAnimationFrame(raf);
     raf = null;
   }
+
+  window.addEventListener(
+    "pointermove",
+    (event) => {
+      pointer.x = event.clientX;
+      pointer.y = event.clientY;
+      pointer.active = true;
+    },
+    { passive: true }
+  );
+
+  window.addEventListener("pointerleave", () => {
+    pointer.active = false;
+  });
+
+  document.addEventListener("mouseleave", () => {
+    pointer.active = false;
+  });
 
   resize();
   start();

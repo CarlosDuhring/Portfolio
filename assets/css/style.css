@@ -40,7 +40,7 @@
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   --ease-brand: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --wrap: 1140px;
+  --wrap: 1260px;
 }
 
 /* ---------- 2. Reset ---------- */
@@ -181,8 +181,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  height: 68px;
+  gap: 26px;
+  height: 78px;
 }
 
 .brand {
@@ -190,7 +190,7 @@ button {
   align-items: baseline;
   gap: 9px;
   font-family: var(--font-mono);
-  font-size: 13.5px;
+  font-size: 15px;
   letter-spacing: -0.01em;
   white-space: nowrap;
 }
@@ -217,10 +217,10 @@ button {
 
 .nav__link {
   position: relative;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: var(--radius-sm);
   font-family: var(--font-mono);
-  font-size: 12.5px;
+  font-size: 14px;
   letter-spacing: 0.04em;
   color: var(--text-soft);
   transition: color 0.2s var(--ease), background-color 0.2s var(--ease);
@@ -345,7 +345,7 @@ button {
 .hero__inner {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
   align-items: center;
   gap: 56px;
 }
@@ -395,28 +395,52 @@ button {
 }
 
 .hero__title {
-  margin-top: 22px;
-  font-size: clamp(2.7rem, 6.2vw, 4.4rem);
+  margin-top: 10px;
+  font-size: clamp(3rem, 6.6vw, 5rem);
   font-weight: 800;
-  line-height: 1.02;
-  letter-spacing: -0.035em;
-}
-
-.hero__title-accent {
-  background: linear-gradient(100deg, var(--violet-700) 10%, var(--violet-500) 55%, #b98bfb 95%);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  background: linear-gradient(172deg, #241436 22%, #4c1d95 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.hero__title-accent {
+  background: linear-gradient(
+    100deg,
+    #6d28d9 6%,
+    #8b5cf6 38%,
+    #d8b4fe 50%,
+    #8b5cf6 62%,
+    #6d28d9 94%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 12px 28px rgba(124, 58, 237, 0.22));
+  animation: name-shimmer 8s var(--ease-brand) infinite;
+}
+
+@keyframes name-shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .hero__typing {
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 26px;
-  margin-top: 18px;
+  min-height: 28px;
+  margin-top: 22px;
   font-family: var(--font-mono);
-  font-size: 14.5px;
+  font-size: 16px;
   color: var(--violet-700);
 }
 
@@ -441,10 +465,10 @@ button {
 }
 
 .hero__desc {
-  max-width: 52ch;
-  margin-top: 18px;
+  max-width: 54ch;
+  margin-top: 20px;
   color: var(--text-soft);
-  font-size: 16.5px;
+  font-size: 17.5px;
   line-height: 1.72;
 }
 
@@ -458,11 +482,11 @@ button {
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  padding: 12px 20px;
+  gap: 10px;
+  padding: 14px 24px;
   border-radius: var(--radius);
   border: 1px solid transparent;
-  font-size: 14.5px;
+  font-size: 15.5px;
   font-weight: 600;
   letter-spacing: -0.01em;
   transition: transform 0.2s var(--ease), box-shadow 0.25s var(--ease),
@@ -537,7 +561,7 @@ button {
 .hero__art img {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 522px;
   height: auto;
   border-radius: 14px;
   box-shadow: var(--shadow-lg);
@@ -688,7 +712,7 @@ button {
 
 .section__title {
   margin-top: 14px;
-  font-size: clamp(1.75rem, 3.6vw, 2.55rem);
+  font-size: clamp(2rem, 3.8vw, 2.95rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.12;
@@ -697,7 +721,7 @@ button {
 .section__sub {
   margin-top: 12px;
   color: var(--text-soft);
-  font-size: 15.5px;
+  font-size: 16.5px;
 }
 
 .section__head::after {
@@ -904,7 +928,7 @@ button {
 .card__title {
   margin-top: 16px;
   font-family: var(--font-mono);
-  font-size: 16.5px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
@@ -912,7 +936,7 @@ button {
 .card__desc {
   margin-top: 8px;
   color: var(--text-soft);
-  font-size: 14.5px;
+  font-size: 15.5px;
   line-height: 1.68;
 }
 
@@ -1312,6 +1336,97 @@ main {
   }
 }
 
+/* ---------- 17.5 Escala maior ---------- */
+.header__inner {
+  height: 90px;
+}
+
+.brand {
+  font-size: 17px;
+  gap: 10px;
+}
+
+.nav {
+  gap: 6px;
+}
+
+.nav__link {
+  padding: 12px 17px;
+  font-size: 16px;
+}
+
+.hero__inner {
+  gap: 64px;
+}
+
+.hero__title {
+  font-size: clamp(3rem, 6.2vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  filter: drop-shadow(0 18px 42px rgba(109, 40, 217, 0.16));
+}
+
+.hero__title-accent {
+  filter: drop-shadow(0 14px 34px rgba(124, 58, 237, 0.3));
+}
+
+.hero__typing {
+  font-size: 17.5px;
+}
+
+.hero__desc {
+  font-size: 17.5px;
+}
+
+.hero__art img {
+  max-width: 520px;
+}
+
+.btn {
+  padding: 16px 27px;
+  font-size: 15.5px;
+}
+
+.eyebrow {
+  font-size: 12.5px;
+}
+
+.section__title {
+  font-size: clamp(2.4rem, 5vw, 3.7rem);
+}
+
+.section__sub {
+  font-size: 17px;
+}
+
+.fact__k {
+  font-size: 11.5px;
+}
+
+.fact__v {
+  font-size: 17px;
+}
+
+.card__title {
+  font-size: 20px;
+}
+
+.card__desc {
+  font-size: 16.5px;
+}
+
+.cert__name {
+  font-size: 16px;
+}
+
+.contact__title {
+  font-size: clamp(2.6rem, 5.4vw, 4.1rem);
+}
+
+.contact__desc {
+  font-size: 17px;
+}
+
 /* ---------- 18. Responsivo ---------- */
 @media (max-width: 1024px) {
   .hero {
@@ -1343,7 +1458,7 @@ main {
 
   .nav {
     position: fixed;
-    top: 68px;
+    top: 78px;
     left: 0;
     right: 0;
     z-index: 45;
@@ -1449,7 +1564,11 @@ main {
   }
 
   .hero__desc {
-    font-size: 15.5px;
+    font-size: 16.5px;
+  }
+
+  .hero__typing {
+    font-size: 15px;
   }
 
   .facts {

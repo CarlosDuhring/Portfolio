@@ -1,75 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="584" height="572" viewBox="0 0 584 572" role="img" aria-label="Retrato de Carlos Duhring em arte ASCII">
+<svg xmlns="http://www.w3.org/2000/svg" width="564" height="551" viewBox="0 0 564 551" role="img" aria-label="Retrato de Carlos Duhring em arte ASCII">
   <defs>
     <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#fbf7ff"/>
       <stop offset="1" stop-color="#f4ecff"/>
     </linearGradient>
     <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#6d28d9" opacity="0.07"/>
+      <circle cx="1" cy="1" r="1" fill="#6d28d9" opacity="0.06"/>
     </pattern>
     <clipPath id="card">
-      <rect x="0.5" y="0.5" width="583" height="571" rx="14"/>
+      <rect x="0.5" y="0.5" width="563" height="550" rx="14"/>
     </clipPath>
   </defs>
 
   <g clip-path="url(#card)">
-    <rect x="0" y="0" width="584" height="572" fill="#fdfbff"/>
-    <rect x="0" y="36" width="584" height="536" fill="url(#dots)"/>
+    <rect x="0" y="0" width="564" height="551" fill="#fdfbff"/>
+    <rect x="0" y="30" width="564" height="521" fill="url(#dots)"/>
   </g>
 
-  <rect x="0.5" y="0.5" width="583" height="571" rx="14" fill="none" stroke="#eadffb"/>
-  <path d="M0.5 14.5A14 14 0 0 1 14.5 0.5H569.5A14 14 0 0 1 583.5 14.5V36H0.5Z" fill="url(#bar)"/>
-  <line x1="0.5" y1="36" x2="583.5" y2="36" stroke="#eadffb"/>
+  <rect x="0.5" y="0.5" width="563" height="550" rx="14" fill="none" stroke="#eadffb"/>
+  <path d="M0.5 14.5A14 14 0 0 1 14.5 0.5H549.5A14 14 0 0 1 563.5 14.5V30H0.5Z" fill="url(#bar)"/>
+  <line x1="0.5" y1="30" x2="563.5" y2="30" stroke="#eadffb"/>
 
-  <circle cx="21" cy="18" r="5" fill="#ff5f56"/>
-  <circle cx="37" cy="18" r="5" fill="#ffbd2e"/>
-  <circle cx="53" cy="18" r="5" fill="#27c93f"/>
-  <text x="74" y="22" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#8a80a3">carlos@duhring: ~/profile</text>
+  <circle cx="17" cy="15" r="4" fill="#ff5f56"/>
+  <circle cx="30" cy="15" r="4" fill="#ffbd2e"/>
+  <circle cx="43" cy="15" r="4" fill="#27c93f"/>
+  <text x="58" y="19" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8a80a3">carlos@duhring: ~/profile</text>
 
-  <text font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#5b21b6" xml:space="preserve">
-    <tspan x="43.6" y="68.0">                          ::  :-::.</tspan>
-    <tspan x="43.6" y="80.3">                        -#*##*%%%%##*=:</tspan>
-    <tspan x="43.6" y="92.5">                      :#%%%%#%%%%%%#%%#=</tspan>
-    <tspan x="43.6" y="104.8">                     +%%#%%%%%%%%#######*:</tspan>
-    <tspan x="43.6" y="117.1">                    .@%#%%%%%%%%%#%%######+</tspan>
-    <tspan x="43.6" y="129.3">                    .%%%%%%%%%%@@%%%%#%%###:</tspan>
-    <tspan x="43.6" y="141.6">                     %%%%%%%%%%%%%@%%%%%%@#.</tspan>
-    <tspan x="43.6" y="153.9">                     *@#%%%@@%%%%%%%%%%%#+-</tspan>
-    <tspan x="43.6" y="166.1">                     .%%%%%@%%%%%%%%%%%%-</tspan>
-    <tspan x="43.6" y="178.4">-:                    :%%%%@%%@@@%@@%%*#*.</tspan>
-    <tspan x="43.6" y="190.6"> .                     +@%%@@@@@%@@%%%+#%-</tspan>
-    <tspan x="43.6" y="202.9">=                       .#%%@@%%@%%%#*=-:</tspan>
-    <tspan x="43.6" y="215.2">+ :-                     :%#%%@@%##***=:. :-</tspan>
-    <tspan x="43.6" y="227.4">+*#-.: -.                 *+++#*+===--=.. -*.-*:                      .</tspan>
-    <tspan x="43.6" y="239.7">##*    +                 .=+++++***##*#*:: ====:   -                 .:.</tspan>
-    <tspan x="43.6" y="252.0">*#**-..*:-==+==++=++===+*%%%%%%%%%%%%%%%#+--.: :.. -..:.:.:::=---==+*###</tspan>
-    <tspan x="43.6" y="264.2">#%##%%*###**###%%#*++++**#%%%%%%%%%%%#*++=+:+#=+*#*%##################*=</tspan>
-    <tspan x="43.6" y="276.5">+*==+*+##%####*=-:-=++*++==+*###%###**=+==:=%%%##*######*############%**</tspan>
-    <tspan x="43.6" y="288.8">**-**##%****##****+=+++%@@#==-===*%@%#+-=:=@#######**##%##############**</tspan>
-    <tspan x="43.6" y="301.0">*****++*==*##%%%%%%#+==+*#%%%%%%%%%#*+===--*%%########**##*+++==-+**+++*</tspan>
-    <tspan x="43.6" y="313.3">       .+%%%%%%%%%@%-----==+*####***+++===-.+#%%#########%%**+=*+*###%##</tspan>
-    <tspan x="43.6" y="325.6">...  .=%@%%%%%%%%%+-:::-====+++=++++++++++=:.-+#%######%#*=++++++++##%%%</tspan>
-    <tspan x="43.6" y="337.8">**#-=%%%%%%%%@%%%+-:-+*#%%%%%%%%%%%%%%%%%%%#+=--*%###%##%####*###%%#*###</tspan>
-    <tspan x="43.6" y="350.1">++#=+@#%@%%%%%%@**=+##*=++++************+++++***:=%###%####**###%%%#+**=</tspan>
-    <tspan x="43.6" y="362.3">++%=*%%%@%%%@%%%%##++=----==+==+=====+=+===-=:-=#--%###%%##%*--==-=+**+=</tspan>
-    <tspan x="43.6" y="374.6">###%@%%%@%%%@@%@#+=:=+===+*++*+++++*=*+=+==++=:-:*--%###%%##%+ ......:--</tspan>
-    <tspan x="43.6" y="386.9">+==%%%%%@%%@@%@*:=--*+=+==*+=++++*+++=++==-++*-=::+-=@##%%%%#%#:.-==+***</tspan>
-    <tspan x="43.6" y="399.1">-:+@%%@%@%%@@%%:-==+*=-===++++**++**##%#+=-=+*+==:-==#%#%%%%%%%#==+++++=</tspan>
-    <tspan x="43.6" y="411.4">.:%%%%@%%@@@%@*--++*+=**###***#*##%%***#%%*==++++-=-:*%#%@%@%%%%%*++++=+</tspan>
-    <tspan x="43.6" y="423.7">.#@%%%@@%@@@%@===*+*#%*-**##*##%%##**#**+#%%++*+++:+ =%#%@%@%%%%%%*++***</tspan>
-    <tspan x="43.6" y="435.9">:@%@%%@@@@@@%@+=***%#=:=#**+##***#**##*##*+*@***+*===:##%@%@@@%%%%%#****</tspan>
-    <tspan x="43.6" y="448.2">+@%@@@@@@@@@%@+***%%-=-*#****#**#####**#*+*-#@*++++=+-#%%@@@@%%@%%%###*#</tspan>
-    <tspan x="43.6" y="460.5">%%@@%%@@@@@@@@***#@*=-=**#***#######%%@#+++*=%%*+++++-*%%%%%%@@@%#######</tspan>
-    <tspan x="43.6" y="472.7">%@@@@@@@@@@@%@**#%%====*#****#####%@%%%%*=+#==@#+=+*+:*%#@@@@##-**######</tspan>
-    <tspan x="43.6" y="485.0">%@@@@@@@@@@@%@%*#@*=+=+*%#+*+*##+#%%%%%%*+=##:++-=*+++%%#@#++.=--==++==+</tspan>
-    <tspan x="43.6" y="497.3">%@@@@@@@@@@@@%@##%==+=+*#@**+=****%%####**=+**-+--#++%%%%#=:-:-+.-=+-+=+</tspan>
-    <tspan x="43.6" y="509.5">@@@@@@@@@@@@@%%##%+=+++*#@*++=+*+*****#*+=+=**==#=#++%#**++=.--===*#****</tspan>
-    <tspan x="43.6" y="521.8">@@@@@@@@@@@@@@@%#%#=****#@*++=*++******+=-++*++++=+#%%@%%%%*.:-+=-:-*+++</tspan>
-    <tspan x="43.6" y="534.0">@@%@@@@@@@@@@@%###%=****#@*+++#******+***==*+++*=-+@@%##*##%-:..++-:.+**</tspan>
-    <tspan x="43.6" y="546.3">%@@@@@@@@@@@%@#####=***##@*+*+#****++*****+**++**.=%%%-=:-+%+.  .*++-:+*</tspan>
+  <text font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="6" fill="#5b21b6" xml:space="preserve">
+    <tspan x="33.60" y="50.00" textLength="518.40" lengthAdjust="spacing">                                                    .::.    .:--::::..                                                                          </tspan>
+    <tspan x="33.60" y="56.09" textLength="518.40" lengthAdjust="spacing">                                                 .::--=--:::-=++====--::::...                                                                   </tspan>
+    <tspan x="33.60" y="62.18" textLength="518.40" lengthAdjust="spacing">                                                :-o*oo***o+o*OOOOOOO***oo+--:.                                                                  </tspan>
+    <tspan x="33.60" y="68.27" textLength="518.40" lengthAdjust="spacing">                                             .:-=oO#OO####OO#%%%%%%%%###O*o+=-:.                                                                </tspan>
+    <tspan x="33.60" y="74.36" textLength="518.40" lengthAdjust="spacing">                                            .-+*O##%%#%%###%%%%%%%%%%%#####OOo=:.                                                               </tspan>
+    <tspan x="33.60" y="80.46" textLength="518.40" lengthAdjust="spacing">                                          .:-+O%%%%%%%%%##%%%%%%%%%%%%##%%%%#Oo=-..                                                             </tspan>
+    <tspan x="33.60" y="86.55" textLength="518.40" lengthAdjust="spacing">                                         .-+*#%%%%%%%%%%%%%%%%%%%%############O*o=:.                                                            </tspan>
+    <tspan x="33.60" y="92.64" textLength="518.40" lengthAdjust="spacing">                                         :+O#%%%##%%%%%%%%%%%%%%%%##############O*+-:.                                                          </tspan>
+    <tspan x="33.60" y="98.73" textLength="518.40" lengthAdjust="spacing">                                         -*%%%##%%%%%%%%%%%%%%%%%%##%%%%#########OOo+-.                                                         </tspan>
+    <tspan x="33.60" y="104.82" textLength="518.40" lengthAdjust="spacing">                                        .=O@%%##%%%%%%%%%%%%%%%%%%%#%%%%###########O*+:                                                         </tspan>
+    <tspan x="33.60" y="110.91" textLength="518.40" lengthAdjust="spacing">                                        .-O%%%%%%%%%%%%%%%%%%%@@@%%%%%%%%%##%%%%####Oo-.                                                        </tspan>
+    <tspan x="33.60" y="117.00" textLength="518.40" lengthAdjust="spacing">                                         -O%%%%%%%%%%%%%%%%%%%@@@@%%%%%%%%##%%%%##%%#*=.                                                        </tspan>
+    <tspan x="33.60" y="123.09" textLength="518.40" lengthAdjust="spacing">                                         -O%%%%%%%%%%%%%%%%%%%%%%%%%@@%%%%%%%%%%%%%%%*-.                                                        </tspan>
+    <tspan x="33.60" y="129.19" textLength="518.40" lengthAdjust="spacing">                                         :*%%%%%%%%%%%%%%%%%%%%%%%%%@@%%%%%%%%%%%%%#Oo:                                                         </tspan>
+    <tspan x="33.60" y="135.28" textLength="518.40" lengthAdjust="spacing">                                         :o#%%%#%%%%%%@@@@%%%%%%%%%%%%%%%%%%%%%%%#*o+-.                                                         </tspan>
+    <tspan x="33.60" y="141.37" textLength="518.40" lengthAdjust="spacing">                                         .=*%@%#%%%%%%@@@@%%%%%%%%%%%%%%%%%%%%%#Oo+-::.                                                         </tspan>
+    <tspan x="33.60" y="147.46" textLength="518.40" lengthAdjust="spacing">                                         .:=O%%%%%%%%%@@%%%%%%%%%%%%%%%%%%%%%%%#o=:..                                                           </tspan>
+    <tspan x="33.60" y="153.55" textLength="518.40" lengthAdjust="spacing">...                                        :o#%%%%%%%%@@%%%%%%%%%%%%%%%%%%%%#%%O+-.                                                             </tspan>
+    <tspan x="33.60" y="159.64" textLength="518.40" lengthAdjust="spacing">:::.                                       .-o#%%%%%%%@@%%%%@@@@@@%%@@@@%%%#OO##*+:                                                             </tspan>
+    <tspan x="33.60" y="165.73" textLength="518.40" lengthAdjust="spacing">:::.                                        .-*#%%%%%%@@%%%%@@@@@@%%@@@@%%%#**O#Oo-.                                                            </tspan>
+    <tspan x="33.60" y="171.82" textLength="518.40" lengthAdjust="spacing">....                                         :+O%@%%%%@@@@@@@@@@%%@@@@%%%%%#*oO##O=:                                                            </tspan>
+    <tspan x="33.60" y="177.92" textLength="518.40" lengthAdjust="spacing">....                                         .-+*#%%%%@@@@@@@@@@%%@@@@%%%%#Oo+*OO*=:                                                            </tspan>
+    <tspan x="33.60" y="184.01" textLength="518.40" lengthAdjust="spacing">-:.                                           .:-+O%%%%%@@@@%%%%@@%%%%%%%#O*+====-:.                                                            </tspan>
+    <tspan x="33.60" y="190.10" textLength="518.40" lengthAdjust="spacing">=-.   ..                                         :oO#%%%@@@@%%%%@@%%%%###O*o+=-::.   ..                                                         </tspan>
+    <tspan x="33.60" y="196.19" textLength="518.40" lengthAdjust="spacing">+=. .:::.                                        .-+#%%%%%%%@@@@%%%###OOO**o+--:..  .:::.                                                       </tspan>
+    <tspan x="33.60" y="202.28" textLength="518.40" lengthAdjust="spacing">+=-:-=-:.     ..                                  .-*#OOO###%%%%#OOOO*ooooo+=-:... .:-=-. ..::.                                                 </tspan>
+    <tspan x="33.60" y="208.37" textLength="518.40" lengthAdjust="spacing">+++o*o=:.... .::..                                 :o**oooo*###O*o+++++======-:... .:=++:.:-+=-.                                            ..  </tspan>
+    <tspan x="33.60" y="214.46" textLength="518.40" lengthAdjust="spacing">oo*OO*=:.... .--:.                                 :+o+++++o*O*oo++++++++===++-:....:-++-:-=o+-.      ..                                    ..  </tspan>
+    <tspan x="33.60" y="220.55" textLength="518.40" lengthAdjust="spacing">OOO#Oo:      .--.                                  :=+++++++oooooooooo*O**oo**o=-:...:===-==+=-.     .::.                                  .....</tspan>
+    <tspan x="33.60" y="226.64" textLength="518.40" lengthAdjust="spacing">####Oo-..    :==:  .............................::-=+oooooooooo**OOOOO####OO##O*+=-:..-=------:..    .::.                ...............::--==--</tspan>
+    <tspan x="33.60" y="232.74" textLength="518.40" lengthAdjust="spacing">OO##O*o=-:...:++-:::----==----====--====-------=+o*OO#################%%%%##%%%#O*+=-:--::::..::...  .::.................:--::::::-----=+o******</tspan>
+    <tspan x="33.60" y="238.83" textLength="518.40" lengthAdjust="spacing">OO##OOO*o==--=o*+==+++++ooo++oooooo+oo++=====++o*O#%%%%%%%%%%%%%%%%%%%%%%%%%####O*o==--:::--:.:-----:-===---==--==--======++++++++++++oo*O###OOO</tspan>
+    <tspan x="33.60" y="244.92" textLength="518.40" lengthAdjust="spacing">O#######OOO*ooOOO****oo*OOOOOO####OO*o++++++++o**O#%%%%%%%%%%%%%%%%%%%%%%%%#O**ooo+=+=---+oo=-==+o**oo*O******************OOOOOOOOOOOOOOO###O*o+</tspan>
+    <tspan x="33.60" y="251.01" textLength="518.40" lengthAdjust="spacing">OO##OOOO####**O#####OOOO######OOOO**oo+++++++oooo**OOO####%%%%%%%%%%%%%%###O*o++++====--+*#O*ooo*OOOOO#%####################################Oo++</tspan>
+    <tspan x="33.60" y="257.10" textLength="518.40" lengthAdjust="spacing">o***o++oo*O*ooO###%%########O*o+++======++++ooo++++++oo**O######%%######OOO*++++====---+*#%%#OOOOOOOO###########OO########################%#O*oo</tspan>
+    <tspan x="33.60" y="263.19" textLength="518.40" lengthAdjust="spacing">+o*o+==++o**o*O######OO#####Oo+===---===++++o*oo*ooo++++oo**OOOOOOO###%#OOO*+======---+*#%%%%%####OO###OO#######OO########################%#O***</tspan>
+    <tspan x="33.60" y="269.28" textLength="518.40" lengthAdjust="spacing">o**o==+oo*OOO###OOOOOO*O###O**ooooo++===+++++oO#####O*+==++++++++o*O#%%%%##Oo=====---+O###############O**O####%#############################O***</tspan>
+    <tspan x="33.60" y="275.37" textLength="518.40" lengthAdjust="spacing">***o++o***OOOO##*ooo***O####OOOOOOO**o+++++++oO#%%@%%O*oo++++oo++o*O%%%%%#O*o==-==-:-+#%%#############O**O###########OOOOOOOOOOO*OOOOOOOOOO*****</tspan>
+    <tspan x="33.60" y="281.47" textLength="518.40" lengthAdjust="spacing">****oo****ooo***o+++o*O###%%##########O*o+===+o*O##%%%#OOOOOOOOOO###%%%#O*oo+=====---+*#%%%%###########OO###OOOO####O*oooooo++++++oo*OO*oooooo**</tspan>
+    <tspan x="33.60" y="287.56" textLength="518.40" lengthAdjust="spacing">++++++++++====++==+o*O####%%%%%%%%%%%%%Oo======+oo*OO#####%%%%%%%%#####O*o++======---=+oO#%%################O**O####O*o+++++==+===+o*OO*oooooo*O</tspan>
+    <tspan x="33.60" y="293.65" textLength="518.40" lengthAdjust="spacing">::::::::::....:-=oO###%%%%%%%%%%%%%%@@%O+------===+++oo**O########OOOOO*o+++++======--:-+*#%%%%%#############OO###%%##*ooo++==oo++o*O#OOOOOOOOOO</tspan>
+    <tspan x="33.60" y="299.74" textLength="518.40" lengthAdjust="spacing">            ..-=o*#%%%%%%%%%%%%%%%%%%##*=---------=====+o*OOOOOOOO*ooooo++++++======--.:-+*O##%%#####################O*ooo++=+oo++o*OO####%%%###</tspan>
+    <tspan x="33.60" y="305.83" textLength="518.40" lengthAdjust="spacing">.....      .:=oO#%%%%%%%%%%%%%%%%%%#*o+=-:::::---=======+ooooo++ooo+++++++++++++++++=-:::-=+o*#%%%############%%##O*o+ooo++++++++++oo*O###%%%%%%</tspan>
+    <tspan x="33.60" y="311.92" textLength="518.40" lengthAdjust="spacing">-----:...:-=+*#%@@%%%%%%%%%%%%%%%%#O+=-:::---==++oooooooooooooooooooooooooooooooooooo+=-::--=+*O##############%%##O*o+ooooooooooooooo*O####%%%%%</tspan>
+    <tspan x="33.60" y="318.01" textLength="518.40" lengthAdjust="spacing">+++o*o-:-=oOO#%%%%%%%%%%%%@@%%%%%#*+=-:::-=++o*OO###OOO#######OO#####################OOo+===-==+*O#%######%%####%##OOOOOOO**OOOOOO######OO######</tspan>
+    <tspan x="33.60" y="324.10" textLength="518.40" lengthAdjust="spacing">*o**OO+-=o#%%%%%%%%%%%%%%%@@%%%%%Oo+=---=+oo**OO######################################O*o+++====+oO#######%%####%%#####O#OOO#####%%%%%#O**O##OOO</tspan>
+    <tspan x="33.60" y="330.20" textLength="518.40" lengthAdjust="spacing">ooo*OO+==o#@%%%%@@%%%%%%%%%%%%@%#**o===+*OOO**ooooooooo*OOOOOOOOOOOOOOOOOOOOOOOO*ooooooo++ooooo+==+*#%######%%########OOOOO#####%%%%%%#Ooo*OO*o+</tspan>
+    <tspan x="33.60" y="336.29" textLength="518.40" lengthAdjust="spacing">+++oOO+=+*#%%#%%@@%%%%%%%%%%%%@%OOO*o++o*OO*o+=====+++++oooooooooooooooooooooooo+++++++=+++ooooo===+*#######%%########OO***OOOOOOOOOOOO*oo***o+=</tspan>
+    <tspan x="33.60" y="342.38" textLength="518.40" lengthAdjust="spacing">+++o#O+=o*#%%%%%@@%%%%%%@@%%%%%%%##OO*o+ooo+==-----====++++++++++++++++++++++++++==========-==++*o=-=o#%######%%%%######Oo+==+++o++++oooo***o+==</tspan>
+    <tspan x="33.60" y="348.47" textLength="518.40" lengthAdjust="spacing">ooo*##*o*#%%%%%%@@%%%%%%@@%%%%%%%#OOO*+==+==-------==+==++++==++======++==+++=++==========-:---+**+=-=*#######%%%%####%#O*=-::--------==+oo++===</tspan>
+    <tspan x="33.60" y="354.56" textLength="518.40" lengthAdjust="spacing">OOOO####%%%%%%%%@@%%%%%%@@@@%%@@%#*oo+--==+========+oo++++oo++++++++++oo=+oo++==++=====++==-::--==o+=-=o#%######%%%%#####Oo-...:::..:::::-------</tspan>
+    <tspan x="33.60" y="360.65" textLength="518.40" lengthAdjust="spacing">OOOOOO#%@@%%%%%%@@%%%%%%@@@@%%%#O*+==---=+++======++**o+++oo++++++++++oo++oo++==++====+++++=-:--:-++=--=*#######%%%%####%#*+-:.....:::::::--====</tspan>
+    <tspan x="33.60" y="366.74" textLength="518.40" lengthAdjust="spacing">ooo++o#%%%%%%%%%@@%%%%@@@@%%@%#*+===---=+o++==++===+o*o+=+++++++++oo++++++++++++====-=++++o+=---::-===--+*#%####%%%%%%%%###O*+-...:-----==+ooooo</tspan>
+    <tspan x="33.60" y="372.83" textLength="518.40" lengthAdjust="spacing">+====o#%%%%%%%%%@@%%%%@@@@%%@%*+---=---=o*+====+===+oo++==+++oo+++ooo++ooo+ooooo+===--=++o*o====-::-===-=o#%%###%%%%%%%%##%%%O+-::--====++o**ooo</tspan>
+    <tspan x="33.60" y="378.92" textLength="518.40" lengthAdjust="spacing">----=o#@%%%%@@%%@@%%%%@@@@%%%#+---=====+oo+=--======++++++++o**o+++oooo*OOOOO#O*o===--==+o*o+====-::-====+O%%%##%%%%%%%%%%%%%#Oo=--=+++++++oo+++</tspan>
+    <tspan x="33.60" y="385.02" textLength="518.40" lengthAdjust="spacing">:::-+*%@%%%%@@%%@@%%%%@@@@%%%*=:--===++ooo+===+++++oooo+o++o****oooo*OOOO#O####O*oo+====++oo++====-:--===+*#%%##%%%%%%%%%%%%%%%Oo+++++++++++++==</tspan>
+    <tspan x="33.60" y="391.11" textLength="518.40" lengthAdjust="spacing">..:=*#%%%%%%@@%%%%@@@@@@%%@%#o=---=+++ooo+==+oo**OOOOO*oooo*OO**OOOO####OOOOOO#####O*+===++++++++=---=---=oO#%##%%@@%%@@%%%%%%%%#O*o++++++++==++</tspan>
+    <tspan x="33.60" y="397.20" textLength="518.40" lengthAdjust="spacing">.:-+#%%%%%%%@@%%%%@@@@@@%%@%*+=--=+++oo*oooo**o*O#####O****O##OO####%%##O*****O###%#O*o+==++++++++=--=--:-+*#%##%%@@%%@@%%%%%%%%%%O*o++++++++++o</tspan>
+    <tspan x="33.60" y="403.29" textLength="518.40" lengthAdjust="spacing">.:oO%@%%%%%%@@@@%%@@@@@@%%@#o=====oo++o*OOOOOo++*OOO###O**O#####%%####OO**OO******#####Oo+++oo+++++=--=-..=o#%##%%@@%%@@%%%%%%%%%%%#*o++++oooooo</tspan>
+    <tspan x="33.60" y="409.38" textLength="518.40" lengthAdjust="spacing">.-*%@@%%%%%%@@@@%%@@@@@@%%@#o===++o*oo*O###Oo+==o***OOOOOO###########O***O##O***o*O#####*ooo**o+++++--==:.-+O%##%%@@%%@@%%%%%%%%%%%%O*oooo******</tspan>
+    <tspan x="33.60" y="415.47" textLength="518.40" lengthAdjust="spacing">:=O@@%@@%%%%@@@@@@@@@@@@%%@#o===o*****###O*+=--+*O****o*O###OOOOOO##O***O###**OOOOO****O##*****o++oo====--:=O###%%@@%%@@@@@@%%%%%%%%##OO********</tspan>
+    <tspan x="33.60" y="421.56" textLength="518.40" lengthAdjust="spacing">-+#@%%@@%%%%@@@@@@@@@@@@%%@#*+++o***OO%%O*+---=oO#O***ooO##O*****O##O**O###O**O##O*oo+o*%%#O***o++oo+=====-=*###%%@@%%@@@@@@%%%%%%%%%%##OO*****O</tspan>
+    <tspan x="33.60" y="427.65" textLength="518.40" lengthAdjust="spacing">=o#@%%@@@@@@@@@@@@@@@@@@%%@#*+oo***O#%%#o===--+*O#O******O##****O####OO###O**O##O*oooo=+O%%#O*o+++++++==+=-=*#%%%%@@@@@@@@%%%%@@%%%%%%#####O**O#</tspan>
+    <tspan x="33.60" y="433.75" textLength="518.40" lengthAdjust="spacing">o*%@%%@@@@@@@@@@@@@@@@@@%@@%*o*****O%%%O+--=-=o*OOO******O##O**O##########OOOO#O*o++oo=+*#%%#*o+++++++==+=-=*#%%%%@@@@@@@@%%%@@@%%%%%%######OO##</tspan>
+    <tspan x="33.60" y="439.84" textLength="518.40" lengthAdjust="spacing">##%%@@@@%%%%@@@@@@@@@@@@@@@%O*****O#%%#*+---=+o**OOO*****OO##OO#########%%##%%#Oo++++ooo+*#%%#*o+++++++++===oO#%%%%%%%%%%%@@@@@@%%##############</tspan>
+    <tspan x="33.60" y="445.93" textLength="518.40" lengthAdjust="spacing">%%%%@@@@%%%%@@@@@@@@@@@@@@@%O****O#%@%*o==--=+o**OOO*****O#############%%%%%@%%Oo++++o**++*#%%O*o++++++++=-=oO#%%%%%%%%%%%@@@%##################</tspan>
+    <tspan x="33.60" y="452.02" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@%@@%O***O##%%#o======+o*OOO******O##########%%%%%%%%%%%#*o+=+oO*+=+*%%#Oo+==++oo+=--oO#%#%%@@@@@@%%%%Ooo*OOO############</tspan>
+    <tspan x="33.60" y="458.11" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@%%@%#***O#%%%O+======+oO##O*******O#####OO##%%@@%%%%%%%#Oo+=+oOOo+=+O##*+===+ooo+=-=oO%%#%@@@%%%%#O*Oo==+oo**OOOOOOOOOOO</tspan>
+    <tspan x="33.60" y="464.20" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@%%@@%#**O%%%#*+==+==++oO#%#Ooo**oo*O###O**O#%%%%%%%%%%%#Oo+==+O#Oo=-+*o+===+ooo+++=+O%%%#%@@%#***o==++--==++++oooo++++oo</tspan>
+    <tspan x="33.60" y="470.29" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@%%@@%%OO#%%%*o==++==++oO#%%Ooo**++o*O##OooO#%%%%%%%%%%%#O*o+=+*O#*+-=++=---+**o+++o*#%%%#%%%#*+===::-==----===+++=====++</tspan>
+    <tspan x="33.60" y="476.38" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@@@%%@%####%#o===++==++oO#%%#O**o++++*OO****O#%%%########O**o+=+o**o+==+=---+*Oo++oO#%%%%%%%Oo=----::-===::--==++======++</tspan>
+    <tspan x="33.60" y="482.48" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@@@%%@%####%#o===++==++oO#%@%O**o++=+o******O#####OO####O*ooo+=++o**o===++==+OOo++o#%%%####O*+=-:::::--==::-==+oo+=+++++o</tspan>
+    <tspan x="33.60" y="488.57" textLength="518.40" lengthAdjust="spacing">@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%####%#o===++++++oO#%@%O*o+++==+o**oo**OOOOO**O##O*o+++++=+o**o+==+**++OOo++o#%%#OOO*oo+==-:::---===-==o*OOoooooooo</tspan>
+    <tspan x="33.60" y="494.66" textLength="518.40" lengthAdjust="spacing">@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%###%#*+==+ooo+o**#%@%Oo++++==+ooo++o*********OO*o+===++=+o**o+==+**++*O*oo*#%%#OOO**ooo+=:.:---======+o*****ooooo</tspan>
+    <tspan x="33.60" y="500.75" textLength="518.40" lengthAdjust="spacing">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%##%%#*++o***o***O%@%Oo++++=+ooo+++o***********o+==-=++++o*o+++++oo+++o*O##%%%%%######O*+:.::--=+==---==+**oooooo</tspan>
+    <tspan x="33.60" y="506.84" textLength="518.40" lengthAdjust="spacing">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%##%%#O++o*******O%@%Oo++++=+**o++o************o++====++ooo+++++++===+oO%%%%%%%%%##%%%#Oo-::::-=====-:::-+++++ooo</tspan>
+    <tspan x="33.60" y="512.93" textLength="518.40" lengthAdjust="spacing">@@@@%%@@@@@@@@@@@@@@@@@@@@@@%%%#####%O++o*******O%@%Oo+++++oOO*oo*********oo***ooo===+ooo+++++oo+=-==o#@@@%%%%##OO#####O=::::::-=++=-::::-=+oooo</tspan>
+    <tspan x="33.60" y="519.02" textLength="518.40" lengthAdjust="spacing">@@@@%%@@@@@@@@@@@@@@@@@@@@@@%%######%O++o******O#%@%Oo+++++oO#O**********ooo*****o++=+o*o++++o**+=--=o#@@@%#OOO*oo*OO#%O+-:.....-=++=--:::=+o***</tspan>
+    <tspan x="33.60" y="525.11" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@%%@@%########O++o*****O##%@%Oo++oo+oO#O*******o++oo*******oo++o**o+++o***+-:-o#%%%%#o+++===+o*##o=:.   .:-+o+===-:--+o**</tspan>
+    <tspan x="33.60" y="531.20" textLength="518.40" lengthAdjust="spacing">%%@@@@@@@@@@@@@@@@@@@@@@%%@%%########O++o****O###%@%Oo+oooooO#O******o++++*********oo+o***+++o***+::-o#%%%%O+-=-::--=o##o=:.    .-o*o+++=-:-=o**</tspan>
   </text>
 
-  <rect x="564.0" y="536.5" width="5.8" height="11.4" rx="1" fill="#7c3aed">
+  <rect x="553.0" y="526.1" width="2.9" height="5.7" rx="0.5" fill="#7c3aed">
     <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 </svg>

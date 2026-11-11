@@ -5,7 +5,7 @@ window.I18N = {
   pt: {
     "meta.title": "Carlos Duhring — Desenvolvedor Web Full Stack",
     "meta.desc":
-      "Portfólio de Carlos Eduardo Duhring, desenvolvedor web full stack em formação. Python, PHP, JavaScript e TypeScript. Joinville, SC.",
+      "Portfólio de Carlos Eduardo Duhring, desenvolvedor web full stack. Python, PHP, JavaScript e TypeScript. Joinville, SC.",
     "a11y.skip": "Pular para o conteúdo",
     "a11y.menuOpen": "Abrir menu",
     "a11y.menuClose": "Fechar menu",
@@ -18,9 +18,9 @@ window.I18N = {
     "nav.contact": "Contato",
 
     "hero.status": "Disponível para estágio",
-    "hero.role": "Desenvolvedor Web Full Stack em formação",
+    "hero.role": "Desenvolvedor Web Full Stack",
     "hero.desc":
-      "16 anos, Joinville/SC. Estudo Desenvolvimento de Sistemas no SENAI e construo aplicações web com Python, PHP e JavaScript — do banco de dados à interface.",
+      "16 anos, Joinville/SC. Construo aplicações web com Python, PHP e JavaScript — do banco de dados à interface, com Linux e Docker no dia a dia.",
     "hero.ctaPrimary": "Ver projetos",
     "hero.ctaSecondary": "Baixar CV",
 
@@ -35,7 +35,7 @@ window.I18N = {
 
     "facts.age": "Idade",
     "facts.city": "Local",
-    "facts.edu": "Formação",
+    "facts.edu": "Educação",
     "facts.eduValue": "SENAI · 2º ano",
     "facts.focus": "Foco",
     "facts.focusValue": "Web & Cibersegurança",
@@ -51,7 +51,7 @@ window.I18N = {
     "stack.g3": "Back-end",
     "stack.g4": "Banco de dados",
     "stack.g5": "Infra & Ferramentas",
-    "stack.g6": "Estudando agora",
+    "stack.g6": "Explorando",
     "stack.responsive": "Responsivo",
     "stack.a11y": "Acessibilidade",
     "stack.rest": "APIs REST",
@@ -95,7 +95,7 @@ window.I18N = {
     "footer.note": "Feito com HTML, CSS e JavaScript puro",
 
     typing: [
-      "Desenvolvedor Web Full Stack em formação",
+      "Desenvolvedor Web Full Stack",
       "Python · PHP · JavaScript · TypeScript",
       "Linux · Docker · MySQL",
       "Estudando cibersegurança na Cisco NetAcad",
@@ -105,7 +105,7 @@ window.I18N = {
   en: {
     "meta.title": "Carlos Duhring — Full Stack Web Developer",
     "meta.desc":
-      "Portfolio of Carlos Eduardo Duhring, full stack web developer in training. Python, PHP, JavaScript and TypeScript. Joinville, Brazil.",
+      "Portfolio of Carlos Eduardo Duhring, full stack web developer. Python, PHP, JavaScript and TypeScript. Joinville, Brazil.",
     "a11y.skip": "Skip to content",
     "a11y.menuOpen": "Open menu",
     "a11y.menuClose": "Close menu",
@@ -118,9 +118,9 @@ window.I18N = {
     "nav.contact": "Contact",
 
     "hero.status": "Open to internships",
-    "hero.role": "Full Stack Web Developer in training",
+    "hero.role": "Full Stack Web Developer",
     "hero.desc":
-      "16 years old, Joinville/Brazil. I study Software Development at SENAI and build web applications with Python, PHP and JavaScript — from the database to the interface.",
+      "16 years old, Joinville/Brazil. I build web applications with Python, PHP and JavaScript — from the database to the interface, with Linux and Docker day to day.",
     "hero.ctaPrimary": "View projects",
     "hero.ctaSecondary": "Download CV",
 
@@ -151,7 +151,7 @@ window.I18N = {
     "stack.g3": "Back-end",
     "stack.g4": "Databases",
     "stack.g5": "Infra & Tools",
-    "stack.g6": "Currently learning",
+    "stack.g6": "Exploring",
     "stack.responsive": "Responsive",
     "stack.a11y": "Accessibility",
     "stack.rest": "REST APIs",
@@ -194,7 +194,7 @@ window.I18N = {
     "footer.note": "Built with plain HTML, CSS and JavaScript",
 
     typing: [
-      "Full Stack Web Developer in training",
+      "Full Stack Web Developer",
       "Python · PHP · JavaScript · TypeScript",
       "Linux · Docker · MySQL",
       "Studying cybersecurity with Cisco NetAcad",

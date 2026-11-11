@@ -29,7 +29,7 @@ window.I18N = {
     "about.p1":
       "Meu nome é Carlos Eduardo Duhring, tenho 16 anos e moro em Joinville/SC. Desenvolvo sistemas web com Python, PHP e JavaScript, com base técnica em Desenvolvimento de Sistemas pelo SENAI e ensino médio na E.E.B. Governador Celso Ramos.",
     "about.p2":
-      "Trabalho principalmente com desenvolvimento web: interfaces em HTML, CSS e Bootstrap, back-end em Python (Flask) e PHP, e bancos MySQL e PostgreSQL. Uso Linux e Docker no dia a dia e mantenho tudo versionado no Git.",
+      "Trabalho principalmente com desenvolvimento web: interfaces em HTML, CSS e Bootstrap, back-end em Python e PHP, e bancos MySQL e PostgreSQL. Uso Linux e Docker no dia a dia e mantenho tudo versionado no Git.",
     "about.p3":
       "Também atuo com segurança da computação — três cursos concluídos pela Cisco NetAcad e participação no seletivo da WorldSkills na modalidade Cibersegurança.",
 
@@ -129,7 +129,7 @@ window.I18N = {
     "about.p1":
       "My name is Carlos Eduardo Duhring, I'm 16 years old and I live in Joinville/SC, Brazil. I build web systems with Python, PHP and JavaScript, with a technical background in Software Development from SENAI and high school at E.E.B. Governador Celso Ramos.",
     "about.p2":
-      "I mostly work with web development: interfaces in HTML, CSS and Bootstrap, back-end in Python (Flask) and PHP, and MySQL and PostgreSQL databases. I use Linux and Docker daily and keep everything versioned with Git.",
+      "I mostly work with web development: interfaces in HTML, CSS and Bootstrap, back-end in Python and PHP, and MySQL and PostgreSQL databases. I use Linux and Docker daily and keep everything versioned with Git.",
     "about.p3":
       "I also work with computer security — three completed Cisco NetAcad courses and the WorldSkills selection for Cybersecurity.",
 

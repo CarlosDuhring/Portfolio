@@ -1,238 +1,608 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfólio</title>
-    <style>
-
-        .btn-sm,.card,.nav-link,.text,.small,h6,.btn{
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 1rem 3rem rgba(0,0,0,.15) !important;
-        }
-
-
-        h6:hover,.btn-sm:hover,.btn:hover{
-            transform: translateY(-3px);
-            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
-        }
-        
-        .nav-link:hover, .text:hover,.small:hover{
-            color: #ffc107 !important; 
-        }
-        .btn:hover{
-            color: #dd00fa !important; 
-        }
-        
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carlos Duhring — Desenvolvedor Web Full Stack</title>
+    <meta
+      name="description"
+      content="Portfólio de Carlos Eduardo Duhring, desenvolvedor web full stack em formação. Python, PHP, JavaScript e TypeScript. Joinville, SC."
+    />
+    <meta name="author" content="Carlos Eduardo Duhring" />
+    <meta name="theme-color" content="#fbf9ff" />
+    <meta property="og:title" content="Carlos Duhring — Desenvolvedor Web Full Stack" />
+    <meta
+      property="og:description"
+      content="Python, PHP, JavaScript e TypeScript. Projetos, stack e contato."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-<body class="d-flex flex-column min-vh-100 bg-body-secondary" >
 
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Pular para o conteúdo</a>
 
-    <nav class="navbar navbar-expand-lg bg-dark py-3 shadow" data-bs-theme="dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header class="header" id="header">
+      <div class="wrap header__inner">
+        <a class="brand" href="#top">
+          <span class="brand__prompt">carlos@duhring:~#</span>
+          <span class="brand__name">carlos duhring</span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Navegação principal">
+          <a class="nav__link" href="#sobre" data-i18n="nav.about">Sobre</a>
+          <a class="nav__link" href="#stack" data-i18n="nav.stack">Stack</a>
+          <a class="nav__link" href="#projetos" data-i18n="nav.projects">Projetos</a>
+          <a class="nav__link" href="#certificados" data-i18n="nav.certs">Certificações</a>
+          <a class="nav__link" href="#contato" data-i18n="nav.contact">Contato</a>
+          <button
+            class="lang"
+            id="langToggle"
+            type="button"
+            aria-label="Switch to English"
+            title="Switch to English"
+          >
+            <span class="lang__opt" data-lang-opt="pt">PT</span>
+            <span class="lang__sep">/</span>
+            <span class="lang__opt" data-lang-opt="en">EN</span>
+          </button>
+        </nav>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="top">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="wrap hero__inner">
+          <div class="hero__text">
+            <p class="status">
+              <span class="status__dot" aria-hidden="true"></span>
+              <span data-i18n="hero.status">Disponível para estágio</span>
+            </p>
+
+            <h1 class="hero__title">
+              Carlos Eduardo<br />
+              <span class="hero__title-accent">Duhring</span>
+            </h1>
+
+            <p class="hero__typing">
+              <span class="hero__prompt" aria-hidden="true">&gt;</span>
+              <span id="typed" data-i18n="hero.role">Desenvolvedor Web Full Stack em formação</span
+              ><span class="caret" aria-hidden="true"></span>
+            </p>
+
+            <p class="hero__desc" data-i18n="hero.desc">
+              16 anos, Joinville/SC. Estudo Desenvolvimento de Sistemas no SENAI e construo aplicações
+              web com Python, PHP e JavaScript — do banco de dados à interface.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projetos">
+                <span data-i18n="hero.ctaPrimary">Ver projetos</span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h13M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a
+                class="btn btn--ghost"
+                href="assets/Curriculo-Carlos-Duhring.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+                </svg>
+                <span data-i18n="hero.ctaSecondary">Baixar CV</span>
+              </a>
+            </div>
+
+            <ul class="hero__socials">
+              <li>
+                <a href="https://github.com/CarlosDuhring" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" stroke="none">
+                    <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/carlos-eduardo-duhring-6449923a4/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" stroke="none">
+                    <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm6.5 0H13v1.7h.05c.49-.9 1.7-1.85 3.5-1.85 3.74 0 4.43 2.36 4.43 5.43V21h-4v-5.9c0-1.4-.03-3.2-2-3.2-2 0-2.3 1.52-2.3 3.1V21h-4V9Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:carlosduhring@gmail.com" aria-label="E-mail">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2.5" />
+                    <path d="m3.5 7.5 8.5 6 8.5-6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/carlos_duhring/" target="_blank" rel="noopener" aria-label="Instagram">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__art">
+            <div class="hero__art-glow" aria-hidden="true"></div>
+            <img
+              src="assets/img/ascii-avatar.svg"
+              width="519"
+              height="649"
+              alt="Retrato de Carlos Duhring em arte ASCII, dentro de uma janela de terminal"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MARQUEE ================= -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>python</span><span>php</span><span>javascript</span><span>typescript</span>
+          <span>java</span><span>c</span><span>flask</span><span>node.js</span><span>mysql</span>
+          <span>postgresql</span><span>html5</span><span>css3</span><span>bootstrap</span>
+          <span>linux</span><span>docker</span><span>git</span>
+          <span>python</span><span>php</span><span>javascript</span><span>typescript</span>
+          <span>java</span><span>c</span><span>flask</span><span>node.js</span><span>mysql</span>
+          <span>postgresql</span><span>html5</span><span>css3</span><span>bootstrap</span>
+          <span>linux</span><span>docker</span><span>git</span>
+        </div>
+      </div>
+
+      <!-- ================= SOBRE ================= -->
+      <section class="section" id="sobre">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <p class="eyebrow">
+              <span class="eyebrow__num">01</span>
+              <span data-i18n="about.label">sobre</span>
+            </p>
+            <h2 class="section__title" data-i18n="about.title">Um pouco sobre mim</h2>
+          </header>
+
+          <div class="about">
+            <div class="about__text reveal">
+              <p data-i18n="about.p1">
+                Meu nome é Carlos Eduardo Duhring, tenho 16 anos e moro em Joinville/SC. Curso o 2º ano
+                do Técnico em Desenvolvimento de Sistemas no SENAI e o 2º ano do ensino médio na E.E.B.
+                Governador Celso Ramos.
+              </p>
+              <p data-i18n="about.p2">
+                Trabalho principalmente com desenvolvimento web: interfaces em HTML, CSS e Bootstrap,
+                back-end em Python (Flask) e PHP, e bancos MySQL e PostgreSQL. Uso Linux e Docker no dia
+                a dia e mantenho tudo versionado no Git.
+              </p>
+              <p data-i18n="about.p3">
+                Também estudo segurança da computação — concluí três cursos pela Cisco NetAcad e
+                participo do seletivo da WorldSkills na modalidade Cibersegurança.
+              </p>
+            </div>
+
+            <ul class="facts reveal">
+              <li class="fact">
+                <span class="fact__k" data-i18n="facts.age">Idade</span>
+                <span class="fact__v">16</span>
+              </li>
+              <li class="fact">
+                <span class="fact__k" data-i18n="facts.city">Local</span>
+                <span class="fact__v">Joinville, SC</span>
+              </li>
+              <li class="fact">
+                <span class="fact__k" data-i18n="facts.edu">Formação</span>
+                <span class="fact__v">SENAI · 2º ano</span>
+              </li>
+              <li class="fact">
+                <span class="fact__k" data-i18n="facts.focus">Foco</span>
+                <span class="fact__v" data-i18n="facts.focusValue">Web &amp; Cibersegurança</span>
+              </li>
+              <li class="fact">
+                <span class="fact__k" data-i18n="facts.langs">Idiomas</span>
+                <span class="fact__v" data-i18n="facts.langsValue">PT · EN básico</span>
+              </li>
+              <li class="fact">
+                <span class="fact__k" data-i18n="facts.status">Status</span>
+                <span class="fact__v" data-i18n="facts.statusValue">WorldSkills seletivo</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STACK ================= -->
+      <section class="section section--tint" id="stack">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <p class="eyebrow">
+              <span class="eyebrow__num">02</span>
+              <span data-i18n="stack.label">stack</span>
+            </p>
+            <h2 class="section__title" data-i18n="stack.title">Tecnologias que uso</h2>
+          </header>
+
+          <div class="stack">
+            <article class="panel reveal">
+              <h3 class="panel__title" data-i18n="stack.g1">Linguagens</h3>
+              <ul class="tags">
+                <li>Python</li><li>PHP</li><li>JavaScript</li><li>TypeScript</li>
+                <li>Java</li><li>C</li><li>SQL</li>
+              </ul>
+            </article>
+
+            <article class="panel reveal">
+              <h3 class="panel__title" data-i18n="stack.g2">Web &amp; Front-end</h3>
+              <ul class="tags">
+                <li>HTML5</li><li>CSS3</li><li>Bootstrap</li>
+                <li data-i18n="stack.responsive">Responsivo</li><li data-i18n="stack.a11y">Acessibilidade</li>
+              </ul>
+            </article>
+
+            <article class="panel reveal">
+              <h3 class="panel__title" data-i18n="stack.g3">Back-end</h3>
+              <ul class="tags">
+                <li>Flask</li><li>Node.js</li><li data-i18n="stack.rest">APIs REST</li>
+                <li>CRUD</li><li data-i18n="stack.auth">Autenticação</li>
+              </ul>
+            </article>
+
+            <article class="panel reveal">
+              <h3 class="panel__title" data-i18n="stack.g4">Banco de dados</h3>
+              <ul class="tags">
+                <li>MySQL</li><li>PostgreSQL</li><li>SQLite</li>
+              </ul>
+            </article>
+
+            <article class="panel reveal">
+              <h3 class="panel__title" data-i18n="stack.g5">Infra &amp; Ferramentas</h3>
+              <ul class="tags">
+                <li>Git</li><li>GitHub</li><li>Linux</li><li>Docker</li>
+                <li>GitHub Pages</li>
+              </ul>
+            </article>
+
+            <article class="panel panel--now reveal">
+              <h3 class="panel__title" data-i18n="stack.g6">Estudando agora</h3>
+              <ul class="tags">
+                <li data-i18n="stack.now1">Segurança de redes</li>
+                <li data-i18n="stack.now2">Docker</li>
+                <li data-i18n="stack.now3">Inglês técnico</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJETOS ================= -->
+      <section class="section" id="projetos">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <p class="eyebrow">
+              <span class="eyebrow__num">03</span>
+              <span data-i18n="projects.label">projetos</span>
+            </p>
+            <h2 class="section__title" data-i18n="projects.title">O que virou código</h2>
+            <p class="section__sub" data-i18n="projects.sub">
+              Projetos de estudo e de sala de aula, do banco de dados à interface.
+            </p>
+          </header>
+
+          <div class="projects">
+            <article class="card reveal">
+              <div class="card__top">
+                <span class="card__num">01</span>
+                <a
+                  class="card__go"
+                  href="https://github.com/CarlosDuhring/talentbridge"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir talentbridge no GitHub"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="card__title">talentbridge</h3>
+              <p class="card__desc" data-i18n="p1.desc">
+                Plataforma de recrutamento com análise de currículo por IA e execução de código isolada
+                em containers.
+              </p>
+              <ul class="tags tags--sm">
+                <li>TypeScript</li><li>Prisma</li><li>Docker</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__top">
+                <span class="card__num">02</span>
+                <a
+                  class="card__go"
+                  href="https://github.com/CarlosDuhring/TrueHate"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir TrueHate no GitHub"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="card__title">TrueHate</h3>
+              <p class="card__desc" data-i18n="p2.desc">
+                Canal de denúncias internas com painel administrativo, autenticação e acompanhamento de
+                ocorrências.
+              </p>
+              <ul class="tags tags--sm">
+                <li>Flask</li><li>MySQL</li><li>HTML5</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__top">
+                <span class="card__num">03</span>
+                <a
+                  class="card__go"
+                  href="https://github.com/CarlosDuhring/umidade-esp32"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir umidade-esp32 no GitHub"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="card__title">umidade-esp32</h3>
+              <p class="card__desc" data-i18n="p3.desc">
+                Monitor de umidade do solo com ESP32 e dashboard web que exibe as leituras em tempo real.
+              </p>
+              <ul class="tags tags--sm">
+                <li>C/C++</li><li>Node.js</li><li>PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__top">
+                <span class="card__num">04</span>
+                <a
+                  class="card__go"
+                  href="https://github.com/CarlosDuhring/Crud-PHP"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir Crud-PHP no GitHub"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="card__title">Crud-PHP</h3>
+              <p class="card__desc" data-i18n="p4.desc">
+                Sistema de cadastro com CRUD completo, validação de formulários e integração com MySQL.
+              </p>
+              <ul class="tags tags--sm">
+                <li>PHP</li><li>MySQL</li><li>Bootstrap</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__top">
+                <span class="card__num">05</span>
+                <span class="card__badge" data-i18n="p5.badge">em equipe</span>
+                <a
+                  class="card__go"
+                  href="https://github.com/ThurStelzner/PetAlliance"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir PetAlliance no GitHub"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="card__title">PetAlliance</h3>
+              <p class="card__desc" data-i18n="p5.desc">
+                Plataforma que conecta criadores e interessados em animais de raça, centralizando
+                anúncios e contatos.
+              </p>
+              <ul class="tags tags--sm">
+                <li>HTML5</li><li>CSS3</li><li>PHP</li>
+              </ul>
+            </article>
+
+            <article class="card card--this reveal">
+              <div class="card__top">
+                <span class="card__num">06</span>
+                <a
+                  class="card__go"
+                  href="https://github.com/CarlosDuhring/Portfolio"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Abrir este portfólio no GitHub"
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M9 7h8v8" />
+                  </svg>
+                </a>
+              </div>
+              <h3 class="card__title">Portfolio</h3>
+              <p class="card__desc" data-i18n="p6.desc">
+                Este site — página pessoal bilíngue, responsiva e feita sem frameworks.
+              </p>
+              <ul class="tags tags--sm">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CERTIFICADOS ================= -->
+      <section class="section section--tint" id="certificados">
+        <div class="wrap">
+          <header class="section__head reveal">
+            <p class="eyebrow">
+              <span class="eyebrow__num">04</span>
+              <span data-i18n="certs.label">certificações</span>
+            </p>
+            <h2 class="section__title" data-i18n="certs.title">Cursos e certificados</h2>
+          </header>
+
+          <ul class="certs">
+            <li class="cert reveal">
+              <span class="cert__mark" aria-hidden="true">C</span>
+              <span class="cert__name" data-i18n="c1.name">Introduction to Cybersecurity</span>
+              <span class="cert__org">Cisco NetAcad</span>
+              <span class="cert__year">2026</span>
+            </li>
+            <li class="cert reveal">
+              <span class="cert__mark" aria-hidden="true">C</span>
+              <span class="cert__name" data-i18n="c2.name">Endpoint Security</span>
+              <span class="cert__org">Cisco NetAcad</span>
+              <span class="cert__year">2025</span>
+            </li>
+            <li class="cert reveal">
+              <span class="cert__mark" aria-hidden="true">C</span>
+              <span class="cert__name" data-i18n="c3.name">Network Defense</span>
+              <span class="cert__org">Cisco NetAcad</span>
+              <span class="cert__year">2025</span>
+            </li>
+            <li class="cert reveal">
+              <span class="cert__mark cert__mark--alt" aria-hidden="true">I</span>
+              <span class="cert__name" data-i18n="c4.name">Lógica de Programação</span>
+              <span class="cert__org">IFRS</span>
+              <span class="cert__year">—</span>
+            </li>
+            <li class="cert reveal">
+              <span class="cert__mark cert__mark--alt" aria-hidden="true">I</span>
+              <span class="cert__name" data-i18n="c5.name">HTML5</span>
+              <span class="cert__org">IFRS</span>
+              <span class="cert__year">—</span>
+            </li>
+            <li class="cert reveal">
+              <span class="cert__mark cert__mark--alt" aria-hidden="true">I</span>
+              <span class="cert__name" data-i18n="c6.name">Inglês Básico</span>
+              <span class="cert__org">IFRS</span>
+              <span class="cert__year">—</span>
+            </li>
+          </ul>
+
+          <p class="certs__note reveal" data-i18n="certs.note">
+            Também participo do processo seletivo da WorldSkills na modalidade Cibersegurança.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= CONTATO ================= -->
+      <section class="section section--contact" id="contato">
+        <div class="wrap contact reveal">
+          <p class="eyebrow">
+            <span class="eyebrow__num">05</span>
+            <span data-i18n="contact.label">contato</span>
+          </p>
+          <h2 class="contact__title" data-i18n="contact.title">Vamos construir algo juntos?</h2>
+          <p class="contact__desc" data-i18n="contact.desc">
+            Aberto a estágio, projetos e conversas sobre desenvolvimento web e segurança. Respondo em
+            até 24h.
+          </p>
+
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:carlosduhring@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2.5" />
+                <path d="m3.5 7.5 8.5 6 8.5-6" />
+              </svg>
+              <span>carlosduhring@gmail.com</span>
+            </a>
+            <button class="btn btn--ghost" id="copyEmail" type="button" data-copy="carlosduhring@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="9" y="9" width="12" height="12" rx="2.5" />
+                <path d="M15 5.5A2.5 2.5 0 0 0 12.5 3h-7A2.5 2.5 0 0 0 3 5.5v7A2.5 2.5 0 0 0 5.5 15" />
+              </svg>
+              <span data-i18n="contact.copy">Copiar e-mail</span>
             </button>
-            <a class="navbar-brand ms-5 me-5 text-warning" style="font-family: 'Poppins', sans-serif;" href="#">Carlos Duhring</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item "><a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door"></i> Inicio</a></li>
-                    <li class="nav-item ms-4"><a class="nav-link" href="https://github.com/CarlosDuhring"><i class="bi bi-github"></i> GitHub</a></li>
-                    <li class="nav-item ms-4"><a class="nav-link" href="https://www.linkedin.com/in/carlos-eduardo-duhring-6449923a4/"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
-                    <li class="nav-item ms-4"><a class="nav-link" href="#sobre"><i class="bi bi-person"></i> Sobre mim</a></li>
-                    <li class="nav-item ms-4"><a class="nav-link" href="#contatos"><i class="bi bi-envelope"></i> Contatos</a></li>
-                </ul>
-            </div>
+          </div>
+
+          <ul class="contact__socials">
+            <li>
+              <a href="https://github.com/CarlosDuhring" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" stroke="none">
+                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                </svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/carlos-eduardo-duhring-6449923a4/" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" stroke="none">
+                  <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm6.5 0H13v1.7h.05c.49-.9 1.7-1.85 3.5-1.85 3.74 0 4.43 2.36 4.43 5.43V21h-4v-5.9c0-1.4-.03-3.2-2-3.2-2 0-2.3 1.52-2.3 3.1V21h-4V9Z" />
+                </svg>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/carlos_duhring/" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+                </svg>
+                Instagram
+              </a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </section>
+    </main>
 
-    
-
-    <div class="container py-4 flex-grow-1 ">
-        <h1 class="fw-bold mt-5" style="font-family: 'DM Sans', sans-serif; color: #2c3e50;">Projetos</h1>
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-lg rounded-4 border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">True Hate</h5>
-                        <p class="card-text text-muted" style="line-height: 1.6;">
-                            Sistema web desenvolvido no SENAI para registro e gerenciamento de problemas internos da instituição, 
-                            inspirado no modelo do “Reclame Aqui”. A aplicação permite que usuários relatem ocorrências e acompanhem 
-                            o andamento das solicitações, contribuindo para a melhoria da comunicação e resolução de demandas.
-                        </p>
-                        <a href="https://github.com/CarlosDuhring/TrueHate.git" class="btn btn-warning shadow-sm border-0">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-lg rounded-4 border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Crud PHP (Em desenvolvimento)</h5>
-                        <p class="card-text text-muted" style="line-height: 1.6;">
-                            Sistema CRUD em PHP em desenvolvimento, com foco na manipulação de dados (criar, ler, atualizar e excluir) 
-                            utilizando banco de dados. Projeto voltado para aprendizado e prática de desenvolvimento web.
-                        </p>
-                        <a href="https://github.com/CarlosDuhring/Crud-PHP.git" class="btn btn-warning shadow-sm border-0" >Ver mais</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 ">
-                <div class="card h-100 text-center shadow-lg rounded-4 border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Pet Alliance (Em desenvolvimento)</h5>
-                        <p class="card-text text-muted" style="line-height: 1.6;">
-                            Pet Alliance é uma plataforma em desenvolvimento para a S.A 2026, com o objetivo de conectar usuários 
-                            interessados em animais de raça. A aplicação permite encontrar parceiros para reprodução e realizar a 
-                            busca por animais disponíveis para compra, centralizando essas informações em um único sistema.
-                        </p>
-                        <a href="https://github.com/ThurStelzner/PetAlliance.git" class="btn btn-warning shadow-sm border-0">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-    
-        <div class="row g-4 justify-content-center">
-        <h1 class="fw-bold mt-5" style="font-family: 'DM Sans', sans-serif; color: #2c3e50;">Habilidades/Linguagens</h1>
-            
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-sm p-3 shadow-lg rounded-4 border-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1280px-HTML5_logo_and_wordmark.svg.png" 
-                        class="mx-auto mb-3" style="width:60px;" alt="HTML">
-                    <h5 class="card-title">HTML</h5>
-                    <p class="card-text text-muted" style="line-height: 1.4;">
-                        Criação de estruturas de páginas web semânticas, garantindo organização e acessibilidade.
-                    </p>
-                </div>
-            </div>
-
-        
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-sm p-3 shadow-lg rounded-4 border-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/500px-CSS3_logo_and_wordmark.svg.png" 
-                        class="mx-auto mb-3" style="width:60px;" alt="CSS">
-                    <h5 class="card-title">CSS</h5>
-                    <p class="card-text text-muted" style="line-height: 1.4;">
-                        Estilização de páginas web com foco em responsividade, design limpo e experiência do usuário.
-                    </p>
-                </div>
-            </div>
-
-           
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-sm p-3 shadow-lg rounded-4 border-0">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkA7naATL6cBko2pKkiIVU0E1Xfm2xzAOvrQ&s" 
-                        class="mx-auto mb-3" style="width:60px;" alt="PHP">
-                    <h5 class="card-title">PHP</h5>
-                    <p class="card-text text-muted" style="line-height: 1.4;">
-                        Desenvolvimento back-end para manipulação de dados e criação de sistemas web dinâmicos.
-                    </p>
-                </div>
-            </div>
-
-          
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-sm p-3 shadow-lg rounded-4 border-0">
-                    <img src="https://mundophp.com.br/wp-content/uploads/2024/04/mysql.png" 
-                        class="mx-auto mb-3" style="width:60px;" alt="MySQL">
-                    <h5 class="card-title">MySQL</h5>
-                    <p class="card-text text-muted" style="line-height: 1.4;">
-                        Criação e gerenciamento de bancos de dados relacionais, garantindo integridade e consultas eficientes.
-                    </p>
-                </div>
-            </div>
-
-           
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-sm p-3 shadow-lg rounded-4 border-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png" 
-                        class="mx-auto mb-3" style="width:60px;" alt="Python">
-                    <h5 class="card-title">Python</h5>
-                    <p class="card-text text-muted" style="line-height: 1.4;">
-                        Programação voltada a lógica, automação e desenvolvimento de scripts e aplicações.
-                    </p>
-                </div>
-            </div>
-
-            
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 text-center shadow-sm p-3 shadow-lg rounded-4 border-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
-                        class="mx-auto mb-3" style="width:60px;" alt="Bootstrap">
-                    <h5 class="card-title">Bootstrap</h5>
-                    <p class="card-text text-muted" style="line-height: 1.4;">
-                        Uso de framework para criação rápida de layouts responsivos e interfaces modernas.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    
-
-    
-        <h1 id="sobre" class="fw-bold mt-5" style="font-family: 'DM Sans', sans-serif; color: #2c3e50;">Sobre mim</h1>
-        <p class="text-muted" style="line-height: 1.6;">
-            Olá! Meu nome é <strong>Carlos Duhring</strong>, tenho 16 anos e estou cursando <strong>Desenvolvimento de Sistemas</strong> no SENAI. 
-            Sou apaixonado por tecnologia e programação e estou sempre buscando aprender mais sobre desenvolvimento web e criação de sistemas.
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <p class="footer__brand">carlos@duhring:~# <span>EOF</span></p>
+        <p class="footer__note">
+          <span data-i18n="footer.note">Feito com HTML, CSS e JavaScript puro</span>
+          <span aria-hidden="true">·</span> <span id="year">2026</span>
         </p>
-        <p class="text-muted" style="line-height: 1.6;">
-            Já desenvolvi projetos como sistemas de registro, CRUDs em PHP e plataformas em desenvolvimento para S.A 2026. Meu objetivo é aprimorar minhas habilidades em 
-            <strong>HTML, CSS, PHP, MySQL, Python</strong> e frameworks como <strong>Bootstrap</strong> para criar projetos funcionais e modernos.
-        </p>
-        <p class="text-muted mb-5" style="line-height: 1.6;">
-            Gosto de explorar novas tecnologias, aprender boas práticas de programação e criar soluções que sejam úteis e interessantes para as pessoas.
-        </p>
-
-    </div>
-
-
-    <footer class="bg-dark text-light text-center py-5 mt-auto" style="border-top: 4px solid #ffc107;">
-        <div class="container">
-            <div class="row text-center align-items-center">
-
-                <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
-                    <h6>Carlos Duhring</h6>
-                    <p class="small text-white-50">Desenvolvedor em aprendizado</p>
-                </div>
-
-                <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
-                    <h6 id="contatos">Contatos</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="tel:+55 47 9921-1795" class="text text-light text-decoration-none"><i class="bi bi-telephone-fill"></i> 47 9921-1795 </a></li>
-                        <li><a href="mailto:carlosduhring@gmail.com" class="text text-light text-decoration-none"><i class="bi bi-envelope-at-fill"></i> carlosduhring@gmail.com</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
-                    <h6>Redes</h6>                    
-                    <div class="d-flex flex-wrap justify-content-center" style="max-width: 260px;">
-
-                        <a href="https://github.com/CarlosDuhring" target="_blank" class="btn btn-outline-light btn-sm m-1 rounded-4" style="width: 115px;"><i class="bi bi-github"></i> GitHub </a>
-                        <a href="https://www.linkedin.com/in/carlos-eduardo-duhring-6449923a4/" target="_blank" class="btn btn-outline-light btn-sm m-1 rounded-4" style="width: 115px;"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                        <a href="https://www.instagram.com/carlos_duhring/" target="_blank" class="btn btn-outline-light btn-sm m-1 rounded-4" style="width: 115px;"><i class="bi bi-instagram"></i> Instagram</a>
-                        <a href="https://discordapp.com/users/neymarlindokkj" target="_blank" class="btn btn-outline-light btn-sm m-1 rounded-4" style="width: 115px;"><i class="bi bi-discord"></i> Discord</a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-</html>
+    <div class="toast" id="toast" role="status" aria-live="polite" data-i18n="contact.copied">
+      E-mail copiado!
+    </div>
 
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

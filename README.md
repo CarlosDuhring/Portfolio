@@ -1,44 +1,67 @@
-# Portfólio Pessoal - Carlos Duhring
+# Portfólio — Carlos Duhring
 
-Bem-vindo ao repositório do meu portfólio pessoal! Desenvolvi este site para apresentar meus projetos, habilidades técnicas e um pouco sobre a minha trajetória como estudante de Desenvolvimento de Sistemas.
+Site pessoal com projetos, stack, certificados e contato. Tema claro em lavanda/violeta,
+**bilíngue (PT/EN)**, totalmente responsivo e feito **sem frameworks nem build step**.
 
-##  Sobre mim
-Olá! Meu nome é **Carlos Duhring**, tenho 16 anos e sou apaixonado por tecnologia. Atualmente, curso **Desenvolvimento de Sistemas** no SENAI. Meu grande objetivo é aprimorar minhas habilidades em Front-end e Back-end para criar soluções modernas e funcionais.
+![Prévia do portfólio](preview.png)
 
-##  Tecnologias Utilizadas
-Este portfólio foi construído utilizando as seguintes tecnologias:
+## Sobre
 
-* **HTML5:** Estrutura e semântica.
-* **CSS3:** Estilização e animações personalizadas (`hover`, transições suaves).
-* **Bootstrap 5:** Sistema de grids, responsividade e componentes visuais (Cards, Navbar).
-* **Bootstrap Icons:** Ícones vetoriais em todo o layout.
+Página única com cinco seções numeradas: sobre, stack, projetos, certificações e contato.
+O conteúdo é estático — basta um navegador para abrir.
 
-##  Projetos em Destaque
-Aqui estão os principais projetos apresentados no portfólio:
+## Stack
 
-1. **True Hate:** Sistema web desenvolvido no SENAI para registro e gerenciamento de problemas internos da instituição (inspirado no Reclame Aqui).
-2. **CRUD PHP:** Sistema focado na manipulação de dados (Create, Read, Update, Delete) com integração a banco de dados.
-3. **Pet Alliance (S.A 2026):** Plataforma para conectar usuários interessados em animais de raça para reprodução e compra.
+- **HTML5** semântico (landmarks, `aria-*`, link de pular conteúdo)
+- **CSS3** — custom properties, CSS Grid, `clamp()`, gradientes e animações
+- **JavaScript** puro — sem jQuery, sem React, sem dependências de build
 
-##  Como visualizar o projeto
-Como o site é estático (apenas HTML, CSS e Bootstrap via CDN), você não precisa instalar nada para rodar.
-1. Faça o clone deste repositório:
-   ```bash
-   git clone [https://github.com/CarlosDuhring/seu-repositorio-portfolio.git](https://github.com/CarlosDuhring/seu-repositorio-portfolio.git)
+## Recursos
 
-    Abra o arquivo index.html diretamente no seu navegador.
-    (Dica: Você também pode acessar o site online através do GitHub Pages - [Insira o link aqui se tiver])
+- **PT/EN** — troca de idioma instantânea com dicionário de chaves `data-i18n` e preferência salva em `localStorage`
+- **Efeito de digitação** no hero, com respeito a `prefers-reduced-motion`
+- **Reveal no scroll** via `IntersectionObserver` (com escalonamento entre irmãos)
+- **Navegação ativa** acompanhando a seção visível e barra de progresso de leitura
+- **Menu mobile** acessível (`aria-expanded`, fecha com `Esc` e ao clicar em um link)
+- **Copiar e-mail** com `navigator.clipboard` e fallback para navegadores antigos
+- Fontes com fallback de sistema; o site funciona offline
 
-Contatos e Redes
+## Estrutura
 
-Fique à vontade para entrar em contato comigo:
+```
+.
+├── index.html
+├── assets
+│   ├── css/style.css
+│   ├── js
+│   │   ├── i18n.js      # dicionário PT/EN
+│   │   └── main.js      # idioma, digitação, reveal, menu, copiar
+│   ├── img
+│   │   ├── ascii-avatar.svg
+│   │   └── favicon.svg
+│   └── Curriculo-Carlos-Duhring.pdf
+└── preview.png
+```
 
-    LinkedIn: Carlos Eduardo Duhring
+## Rodar localmente
 
-    E-mail: carlosduhring@gmail.com
+```bash
+git clone https://github.com/CarlosDuhring/Portfolio.git
+cd Portfolio
+# abra o index.html no navegador ou sirva a pasta:
+python -m http.server 5500
+```
 
-    Discord: neymarlindokkj
+Depois acesse `http://localhost:5500`.
 
-    Instagram: @carlos_duhring
+## Adicionar um projeto
 
-Desenvolvido com muita dedicação por Carlos Duhring.
+1. Copie um bloco `<article class="card">` no `index.html`.
+2. Ajuste título, link do repositório, tags e a chave `data-i18n` da descrição.
+3. Adicione a mesma chave nos dois idiomas em `assets/js/i18n.js`.
+
+## Contato
+
+- E-mail: carlosduhring@gmail.com
+- LinkedIn: [carlos-eduardo-duhring](https://www.linkedin.com/in/carlos-eduardo-duhring-6449923a4/)
+- GitHub: [@CarlosDuhring](https://github.com/CarlosDuhring)

@@ -27,16 +27,16 @@ window.I18N = {
     "about.label": "sobre",
     "about.title": "Um pouco sobre mim",
     "about.p1":
-      "Meu nome é Carlos Eduardo Duhring, tenho 16 anos e moro em Joinville/SC. Curso o 2º ano do Técnico em Desenvolvimento de Sistemas no SENAI e o 2º ano do ensino médio na E.E.B. Governador Celso Ramos.",
+      "Meu nome é Carlos Eduardo Duhring, tenho 16 anos e moro em Joinville/SC. Desenvolvo sistemas web com Python, PHP e JavaScript, com base técnica em Desenvolvimento de Sistemas pelo SENAI e ensino médio na E.E.B. Governador Celso Ramos.",
     "about.p2":
       "Trabalho principalmente com desenvolvimento web: interfaces em HTML, CSS e Bootstrap, back-end em Python (Flask) e PHP, e bancos MySQL e PostgreSQL. Uso Linux e Docker no dia a dia e mantenho tudo versionado no Git.",
     "about.p3":
-      "Também estudo segurança da computação — concluí três cursos pela Cisco NetAcad e participo do seletivo da WorldSkills na modalidade Cibersegurança.",
+      "Também atuo com segurança da computação — três cursos concluídos pela Cisco NetAcad e participação no seletivo da WorldSkills na modalidade Cibersegurança.",
 
     "facts.age": "Idade",
     "facts.city": "Local",
     "facts.edu": "Educação",
-    "facts.eduValue": "SENAI · 2º ano",
+    "facts.eduValue": "SENAI · Técnico",
     "facts.focus": "Foco",
     "facts.focusValue": "Web & Cibersegurança",
     "facts.langs": "Idiomas",
@@ -62,7 +62,7 @@ window.I18N = {
 
     "projects.label": "projetos",
     "projects.title": "O que virou código",
-    "projects.sub": "Projetos de estudo e de sala de aula, do banco de dados à interface.",
+    "projects.sub": "Projetos que construí, do banco de dados à interface.",
     "p1.desc":
       "Plataforma de recrutamento com análise de currículo por IA e execução de código isolada em containers.",
     "p2.desc":
@@ -98,7 +98,7 @@ window.I18N = {
       "Desenvolvedor Web Full Stack",
       "Python · PHP · JavaScript · TypeScript",
       "Linux · Docker · MySQL",
-      "Estudando cibersegurança na Cisco NetAcad",
+      "Cibersegurança · Cisco NetAcad",
     ],
   },
 
@@ -127,16 +127,16 @@ window.I18N = {
     "about.label": "about",
     "about.title": "A bit about me",
     "about.p1":
-      "My name is Carlos Eduardo Duhring, I'm 16 years old and I live in Joinville/SC, Brazil. I'm in the second year of the Software Development technician program at SENAI and the second year of high school at E.E.B. Governador Celso Ramos.",
+      "My name is Carlos Eduardo Duhring, I'm 16 years old and I live in Joinville/SC, Brazil. I build web systems with Python, PHP and JavaScript, with a technical background in Software Development from SENAI and high school at E.E.B. Governador Celso Ramos.",
     "about.p2":
       "I mostly work with web development: interfaces in HTML, CSS and Bootstrap, back-end in Python (Flask) and PHP, and MySQL and PostgreSQL databases. I use Linux and Docker daily and keep everything versioned with Git.",
     "about.p3":
-      "I also study computer security — I completed three Cisco NetAcad courses and I'm in the WorldSkills selection for Cybersecurity.",
+      "I also work with computer security — three completed Cisco NetAcad courses and the WorldSkills selection for Cybersecurity.",
 
     "facts.age": "Age",
     "facts.city": "Location",
     "facts.edu": "Education",
-    "facts.eduValue": "SENAI · 2nd year",
+    "facts.eduValue": "SENAI · Technical",
     "facts.focus": "Focus",
     "facts.focusValue": "Web & Cybersecurity",
     "facts.langs": "Languages",
@@ -162,7 +162,7 @@ window.I18N = {
 
     "projects.label": "projects",
     "projects.title": "What became code",
-    "projects.sub": "Study and classroom projects, from the database to the interface.",
+    "projects.sub": "Projects I built, from the database to the interface.",
     "p1.desc":
       "Recruiting platform with AI resume analysis and isolated code execution in containers.",
     "p2.desc":

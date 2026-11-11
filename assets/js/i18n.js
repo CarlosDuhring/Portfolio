@@ -41,8 +41,8 @@ window.I18N = {
     "facts.focusValue": "Web & Cibersegurança",
     "facts.langs": "Idiomas",
     "facts.langsValue": "PT · EN básico",
-    "facts.status": "Status",
-    "facts.statusValue": "WorldSkills seletivo",
+    "facts.certs": "Certificações",
+    "facts.certsValue": "6 cursos",
 
     "stack.label": "stack",
     "stack.title": "Tecnologias que uso",
@@ -141,8 +141,8 @@ window.I18N = {
     "facts.focusValue": "Web & Cybersecurity",
     "facts.langs": "Languages",
     "facts.langsValue": "PT · basic EN",
-    "facts.status": "Status",
-    "facts.statusValue": "WorldSkills selection",
+    "facts.certs": "Certifications",
+    "facts.certsValue": "6 courses",
 
     "stack.label": "stack",
     "stack.title": "Technologies I use",

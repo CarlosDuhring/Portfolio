@@ -148,31 +148,6 @@
     if (window.innerWidth > 860 && menuOpen) setMenu(false);
   });
 
-  /* ---------------- Reveal no scroll ---------------- */
-  const revealItems = $$(".reveal");
-
-  if (reduceMotion || !("IntersectionObserver" in window)) {
-    revealItems.forEach((el) => el.classList.add("is-visible"));
-  } else {
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        });
-      },
-      { rootMargin: "0px 0px -6% 0px", threshold: 0.12 }
-    );
-
-    revealItems.forEach((el) => {
-      const siblings = el.parentElement ? Array.from(el.parentElement.children) : [];
-      const index = Math.max(siblings.indexOf(el), 0);
-      el.style.transitionDelay = `${Math.min(index, 5) * 70}ms`;
-      revealObserver.observe(el);
-    });
-  }
-
   /* ---------------- Header + progresso ---------------- */
   const header = $("#header");
   const progress = $("#scrollProgress");

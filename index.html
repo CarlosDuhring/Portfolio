@@ -24,9 +24,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <noscript>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
   </head>
 
   <body>
+    <div class="bg-fx" aria-hidden="true">
+      <span class="bg-fx__blob bg-fx__blob--1"></span>
+      <span class="bg-fx__blob bg-fx__blob--2"></span>
+    </div>
+    <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Pular para o conteúdo</a>
 
@@ -160,11 +174,16 @@
             <div class="hero__art-glow" aria-hidden="true"></div>
             <img
               src="assets/img/ascii-avatar.svg"
-              width="519"
-              height="649"
+              width="429"
+              height="469"
               alt="Retrato de Carlos Duhring em arte ASCII, dentro de uma janela de terminal"
             />
           </div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>scroll</span>
+          <i></i>
         </div>
       </section>
 
@@ -185,7 +204,7 @@
       <!-- ================= SOBRE ================= -->
       <section class="section" id="sobre">
         <div class="wrap">
-          <header class="section__head reveal">
+          <header class="section__head reveal reveal--title">
             <p class="eyebrow">
               <span class="eyebrow__num">01</span>
               <span data-i18n="about.label">sobre</span>
@@ -194,7 +213,7 @@
           </header>
 
           <div class="about">
-            <div class="about__text reveal">
+            <div class="about__text reveal reveal--left">
               <p data-i18n="about.p1">
                 Meu nome é Carlos Eduardo Duhring, tenho 16 anos e moro em Joinville/SC. Curso o 2º ano
                 do Técnico em Desenvolvimento de Sistemas no SENAI e o 2º ano do ensino médio na E.E.B.
@@ -211,7 +230,7 @@
               </p>
             </div>
 
-            <ul class="facts reveal">
+            <ul class="facts reveal reveal--right">
               <li class="fact">
                 <span class="fact__k" data-i18n="facts.age">Idade</span>
                 <span class="fact__v">16</span>
@@ -233,8 +252,8 @@
                 <span class="fact__v" data-i18n="facts.langsValue">PT · EN básico</span>
               </li>
               <li class="fact">
-                <span class="fact__k" data-i18n="facts.status">Status</span>
-                <span class="fact__v" data-i18n="facts.statusValue">WorldSkills seletivo</span>
+                <span class="fact__k" data-i18n="facts.certs">Certificações</span>
+                <span class="fact__v" data-i18n="facts.certsValue">6 cursos</span>
               </li>
             </ul>
           </div>
@@ -244,7 +263,7 @@
       <!-- ================= STACK ================= -->
       <section class="section section--tint" id="stack">
         <div class="wrap">
-          <header class="section__head reveal">
+          <header class="section__head reveal reveal--title">
             <p class="eyebrow">
               <span class="eyebrow__num">02</span>
               <span data-i18n="stack.label">stack</span>
@@ -252,7 +271,7 @@
             <h2 class="section__title" data-i18n="stack.title">Tecnologias que uso</h2>
           </header>
 
-          <div class="stack">
+          <div class="stack" data-stagger="0.08">
             <article class="panel reveal">
               <h3 class="panel__title" data-i18n="stack.g1">Linguagens</h3>
               <ul class="tags">
@@ -307,7 +326,7 @@
       <!-- ================= PROJETOS ================= -->
       <section class="section" id="projetos">
         <div class="wrap">
-          <header class="section__head reveal">
+          <header class="section__head reveal reveal--title">
             <p class="eyebrow">
               <span class="eyebrow__num">03</span>
               <span data-i18n="projects.label">projetos</span>
@@ -318,7 +337,7 @@
             </p>
           </header>
 
-          <div class="projects">
+          <div class="projects" data-stagger="0.1">
             <article class="card reveal">
               <div class="card__top">
                 <span class="card__num">01</span>
@@ -473,7 +492,7 @@
       <!-- ================= CERTIFICADOS ================= -->
       <section class="section section--tint" id="certificados">
         <div class="wrap">
-          <header class="section__head reveal">
+          <header class="section__head reveal reveal--title">
             <p class="eyebrow">
               <span class="eyebrow__num">04</span>
               <span data-i18n="certs.label">certificações</span>
@@ -481,7 +500,7 @@
             <h2 class="section__title" data-i18n="certs.title">Cursos e certificados</h2>
           </header>
 
-          <ul class="certs">
+          <ul class="certs" data-stagger="0.07">
             <li class="cert reveal">
               <span class="cert__mark" aria-hidden="true">C</span>
               <span class="cert__name" data-i18n="c1.name">Introduction to Cybersecurity</span>
@@ -603,6 +622,8 @@
     </div>
 
     <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/motion.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
